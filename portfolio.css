@@ -1,0 +1,89 @@
+/* General Styles */
+
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Cover Image */
+  .cover-image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Attractive shadow for the image */
+  }
+  
+  /* Section Styles */
+  section {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    border-left: 8px solid #cb9a45; /* Primary color accent */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  h1 {
+    font-size: 32px;
+    color: #0b292a; /* Secondary color for headings */
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 26px;
+    color: #cb9a45; /* Primary color for subheadings */
+    margin-top: 30px;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* Hover Effect on Sections */
+  section:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+  }
+  
+  /* Partnership Section Specific Styling */
+  .partnership {
+    background-color: #f9f9f9;
+  }
+  
+  /* Attractive Hover Effects for Links */
+  ul li:hover {
+    color: #cb9a45; /* Primary color for text on hover */
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 28px;
+    }
+  
+    h2 {
+      font-size: 22px;
+    }
+  
+    p, li {
+      font-size: 16px;
+    }
+  }
+  

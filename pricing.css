@@ -1,0 +1,241 @@
+.pricing-section {
+    padding: 60px 0;
+    background: url('https://images.pexels.com/photos/416974/pexels-photo-416974.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center;
+    background-size: cover;
+    color: #0b292a;
+}
+
+.section-title h2 {
+    color: #cb9a45;
+    font-size: 30px;
+    margin-top: -20px;
+}
+
+/* Box styles */
+.price-card {
+    background: #f3e6d2; /* Lighter shade of #cb9a45 for the box background */
+    padding: 10px 60px;
+    position: relative;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 100%; /* Ensure cards take the full height of the container */
+    width: 400px; /* Set a fixed width for consistency */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    color: #0b292a; /* Secondary color for text */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space items evenly */
+    margin: 15px; /* Add margin to create space between boxes */
+}
+
+.price-card h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #0b292a; /* Secondary color for headings */
+}
+
+.section-title p {
+    color: #0b292a;
+    font-size: 20px;
+    margin-top: -8px;
+}
+
+.price-card .price span {
+    font-size: 50px;
+    font-weight: 600;
+    color: #0b292a; /* Secondary color for price */
+}
+
+/* Hover effect on price card */
+.price-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    background: #f2b166; /* Slightly lighter shade on hover */
+}
+
+.price-card:hover h2,
+.price-card:hover .pricing-offers li,
+.price-card:hover .price span {
+    color: #0b292a; /* Maintain secondary color on hover */
+}
+
+/* Button styles */
+.price-card .btn {
+    font-size: 14px;
+    border-radius: 50px;
+    padding: 10px 30px;
+    border: none;
+    background-color: #0b292a;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.price-card .btn:hover {
+    background-color: #073e3e; /* Darker hover effect on button */
+    color: #cb9a45; /* Button text changes to primary color */
+}
+
+/* Uniform spacing between boxes */
+.pricing-section .row .col-md-4 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px; /* Added space between the boxes */
+}
+
+/* Ensuring all boxes have the same height */
+/* Ensure consistent height for the parent container */
+.container .row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Ensure all items stretch to the same height */
+}
+
+/* Maintain button alignment */
+.price-card .btn {
+    align-self: center; /* Center align buttons within the card */
+}
+
+.note-section {
+    background-color: #f3e6d2; /* Lighter shade for the background */
+    padding: 40px; /* Increased padding for a spacious feel */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    margin: 20px 0; /* Space above and below the section */
+    position: relative; /* For pseudo-elements */
+    overflow: hidden; /* Ensure pseudo-elements don't overflow */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.note-section:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.note-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.05); /* Light overlay for subtle depth */
+    border-radius: 15px; /* Match the section's border radius */
+    z-index: 0; /* Behind the text */
+}
+
+.note-header {
+    font-size: 24px; /* Larger header font size */
+    color: #cb9a45; /* Primary color for the header */
+    margin-bottom: 15px; /* Space below the header */
+    font-weight: bold; /* Bold header for emphasis */
+    text-transform: uppercase; /* Uppercase for a formal touch */
+}
+
+.note-text {
+    font-size: 20px; /* Slightly larger font size for the note */
+    color: #0b292a; /* Secondary color for the text */
+    margin-bottom: 10px; /* Space between paragraphs */
+    z-index: 1; /* Ensure text is above the overlay */
+    position: relative; /* For z-index stacking */
+}
+
+.contact-text {
+    font-size: 18px; /* Font size for the contact text */
+    color: #073e3e; /* Darker shade of the secondary color for contrast */
+    z-index: 1; /* Ensure text is above the overlay */
+    position: relative; /* For z-index stacking */
+}
+
+.contact-button {
+    background-color: #0b292a; /* Primary color */
+    color: #cb9a45; /* Primary color for text */
+    padding: 12px 30px; /* Button padding */
+    border-radius: 30px; /* Rounded button */
+    border: none; /* No border */
+    font-size: 16px; /* Font size for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 15px; /* Space above the button */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    z-index: 1; /* Ensure button is above the overlay */
+    position: relative; /* For z-index stacking */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow for button */
+}
+
+.contact-button:hover {
+    background-color: #073e3e; /* Darker shade on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Add animation effect on contact button */
+.contact-button:focus {
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 0 4px rgba(203, 154, 69, 0.6); /* Glow effect when focused */
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .price-card {
+        width: 300px; /* Decrease width for medium screens */
+    }
+
+    .section-title h2 {
+        font-size: 26px; /* Decrease font size for titles */
+    }
+}
+
+@media (max-width: 992px) {
+    .pricing-section .row {
+        flex-direction: column; /* Stack boxes vertically on smaller screens */
+        align-items: center; /* Center align boxes */
+    }
+
+    .price-card {
+        width: 100%; /* Use full width on small screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .section-title h2 {
+        font-size: 24px; /* Further decrease font size */
+    }
+
+    .section-title p {
+        font-size: 18px; /* Adjust paragraph font size */
+    }
+
+    .note-header {
+        font-size: 22px; /* Adjust note header size */
+    }
+
+    .note-text {
+        font-size: 18px; /* Adjust note text size */
+    }
+}
+
+@media (max-width: 768px) {
+    .price-card {
+        padding: 15px; /* Reduce padding for very small screens */
+    }
+
+    .price-card .price span {
+        font-size: 40px; /* Decrease price font size */
+    }
+
+    .note-section {
+        padding: 30px; /* Reduce note section padding */
+    }
+
+    .contact-button {
+        padding: 10px 20px; /* Adjust button padding */
+        font-size: 14px; /* Adjust button font size */
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title h2 {
+        font-size: 22px; /* Decrease title size for very small screens */
+    }
+
+    .section-title p {
+        font-size: 16px; /* Decrease paragraph size */
+    }
+}
